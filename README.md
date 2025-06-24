@@ -1,4 +1,10 @@
-# 🐍 Sollax — Local AI Tweet Automation
+# sollax — Local AI Tweet Automation
+---
+<p align="left">
+  <a href="https://www.python.org/"><img src="https://img.shields.io/badge/Python-3.9%2B-blue?logo=python" alt="Python"></a>
+  <a href="https://www.selenium.dev/"><img src="https://img.shields.io/badge/Selenium-Automation-brightgreen?logo=selenium" alt="Selenium"></a>
+  <a href="https://ollama.com/"><img src="https://img.shields.io/badge/Ollama-Required-green?logo=ollama" alt="Ollama"></a>
+</p>
 
 **Sollax** is a Python-based automation tool that leverages **Ollama** (a local LLM runtime) and **Selenium** to autonomously generate and publish tweets. Designed to run locally with full control, Sollax reads prompts from a JSON file, generates content using an LLM, and posts it on X (formerly Twitter) using a logged-in Chrome session.
 
@@ -59,5 +65,7 @@ python sollax.py
 Use responsibly.
 
 ## To-do
+- Add model to config.json
+- Add schedule
 - Enhance debug
 - Add tweet log
