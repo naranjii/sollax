@@ -10,7 +10,8 @@ print("🟢 config.json loaded")
 # Gera o tweet
 tweet = gerar_conteudo(
     system=config["system_prompt"],
-    user=config["user_prompt"]
+    user=config["user_prompt"],
+    model=config["model"]
 )
 print("🐦 Sollax says:\n", tweet)
 log_dir = "data"
