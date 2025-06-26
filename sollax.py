@@ -1,4 +1,5 @@
 import json
+import os
 from src.ai.ollama_generator import gerar_conteudo
 from src.selenium.tweet_sender import postar_tweet
 
@@ -12,7 +13,11 @@ tweet = gerar_conteudo(
     user=config["user_prompt"]
 )
 print("🐦 Sollax says:\n", tweet)
-
+log_dir = "data"
+log_file = os.path.join(log_dir, "log.txt")
+os.makedirs(log_dir, exist_ok=True)
+with open(log_file, "a", encoding="utf-8") as log:
+    log.write(tweet + "\n\n")
 # Posta o tweet
 postar_tweet(tweet, config["chrome_profile_path"])
 print("🔥 Tweet posted ")

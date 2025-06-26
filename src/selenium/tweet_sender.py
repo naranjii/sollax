@@ -10,7 +10,7 @@ def postar_tweet(text, chrome_profile_path):
     options.add_experimental_option("excludeSwitches", ["enable-automation"])
     options.add_experimental_option("useAutomationExtension", False)
     options.add_argument(f"--user-data-dir={chrome_profile_path}")  # full path to the profile directory
-    # options.add_argument("--headless=new")  # run in background if desired
+    options.add_argument("--headless=new")  # run in background if desired
     options.add_argument("--disable-gpu")
     print("[DEBUG] Starting Chrome driver...")
     try:
@@ -28,6 +28,9 @@ def postar_tweet(text, chrome_profile_path):
             print(f"[ERROR] Tweet text box not found: {e}")
             driver.quit()
             return
+        # Remove surrounding double quotes if present
+        if isinstance(text, str) and text.startswith('"') and text.endswith('"'):
+            text = text[1:-1]
         box.send_keys(text)
         time.sleep(2)
         print("[DEBUG] Looking for post button...")
