@@ -69,3 +69,4 @@ Use responsibly.
 - Add schedule
 - Enhance debug
 - Add tweet log
+- PT-BR Readme
