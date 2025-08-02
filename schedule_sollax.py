@@ -2,7 +2,7 @@ import time
 import subprocess
 import sys
 
-TRATE = 20  # Set the interval in minutes
+TRATE = 6  # Set the interval in minutes
 
 print(f"[SCHEDULER] Running sollax.py every {TRATE} minutes. Press Ctrl+C to stop.")
 
