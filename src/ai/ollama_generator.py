@@ -1,5 +1,4 @@
 import subprocess
-import json
 
 def gerar_conteudo(system: str, user: str, model: str) -> str:
     prompt = f"{system}\n\n{user}"
