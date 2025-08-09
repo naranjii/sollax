@@ -6,7 +6,7 @@
   <a href="https://ollama.com/"><img src="https://img.shields.io/badge/Ollama-Required-green?logo=ollama" alt="Ollama"></a>
 </p>
 
-**Sollax** is a Python-based automation tool that leverages **Ollama** (a local LLM runtime) and **Selenium** to autonomously generate and publish tweets. Designed to run locally with full control, Sollax reads prompts from a JSON file, generates content using an LLM, and posts it on X (formerly Twitter) using a logged-in Chrome session.
+**Sollax** is a Python-based automation tool that leverages **Ollama** (a local LLM runtime) and **Selenium** to autonomously generate and publish tweets. Designed to run locally with full control, Sollax reads prompts from a JSON file, generates content using a LLM, and posts it on X (formerly Twitter) using a logged-in Chrome session.
 
 > ⚠️ **Disclaimer**  
 > This project is intended for **educational** and **portfolio** purposes only. It is a demonstration of local AI integration and browser automation. The author does not endorse or encourage automated behavior that violates platform terms of service or spam policies.
